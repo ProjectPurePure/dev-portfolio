@@ -33,110 +33,31 @@ p {
 }
 
 /* Navigation Bar */
-/* Navbar container */
 .navbar {
-  display: flex;
-  align-items: center;
-  background-color: #8d54be; 
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 45px;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0; /* Ensure it starts from the very left */
+	width: 100%;
+	overflow: hidden;
+	background-color: #8d54be;
+	z-index: 10; /* Ensure navbar stays above page content */
 }
 
-/* Hamburger button */
-.nav-toggle {
-  display: none;
-  font-size: 25pt;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-right: 15px;
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 7px 9px;
+	text-decoration: none;
+	font-size: 13pt;
 }
 
-/* Desktop nav links */
-.nav-links {
-  display: flex;
-  gap: 15px;
+.navbar a:hover {
+	background: #f8c75d;
+	color: black;
 }
 
-.nav-links a {
-  color: white;             /* force white text */
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-
-.nav-links a:visited {
-  color: white;             /* fix purple visited links */
-}
-
-.nav-links a:hover {
-  background-color: #f8c75d;
-  color: black;
-}
-
-.nav-close {
-  display: none;               /* hidden on desktop */
-  background: none;
-  border: none;
-  color: white;
-  font-size: 25pt;
-  position: absolute;
-  top: 15px;
-  left: 15px;                  /* inside menu, left-aligned */
-  cursor: pointer;
-}
-
-/* Mobile menu */
-@media (max-width: 640px) {
-  .nav-toggle {
-    display: block;         /* show hamburger */
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: -100%;            /* start off-screen left */
-    width: 100%;            /* full width of viewport */
-    height: 100vh;          /* full height */
-    background-color: #8d54be;
-    padding-top: 80px;
-    gap: 10px;
-    transition: left 0.3s ease;
-    z-index: 90;
-    overflow-y: auto; 
-  }
-
-  .nav-links.show {
-    left: 0;                /* slide in from left */
-  }
-
-  .nav-links a {
-    font-size: 18pt;
-    padding: 20px; /* <-- pushes links below the X close button */
-  }
-  .nav-close {
-    display: block;            /* show on mobile menu */
-  }
-
-/* Prevent body from scrolling */
-.no-scroll {
-  overflow: hidden;
-  height: 100vh; /* optional, ensures full-page height is fixed */
-}
-
-  .navbar {
-    height: 55px; /* increase this to make the blue bar thicker */
-  }
-}
 /* Default for desktops */
 #header {
 	padding: 40px 20px;
@@ -145,12 +66,18 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 300px; /* Or auto, depending on your layout */
-	z-index: 1;
 }
 
+/* Tablets */
+@media (max-width: 768px) {
+	#header {
+		height: 200px;
+		padding: 30px 15px;
+	}
+}
 
 /* Phones */
-@media (max-width: 640px) {
+@media (max-width: 480px) {
 	#header {
 		height: 150px;
 		padding: 20px 10px;
@@ -177,20 +104,17 @@ p {
 }
 
 #header p {
-  font-size: 25pt;
-  padding: 5px 20px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  color: white;
-  display: inline-block;
-  margin: 0 auto;
-  position: relative; /* Add this line */
-  z-index: 2; /* Add this line to explicitly layer the text */
+	font-size: 25pt;
+	padding: 5px 20px; /* Add horizontal padding */
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	color: white;
+	display: inline-block; /* This makes the box wrap the text */
+	margin: 0 auto; /* Center it inside #header */
 }
-
 
 #header {
 	text-align: center;
@@ -205,26 +129,13 @@ p {
 }
 
 .section h1 {
-  font-size: 15pt;
-  color: #8d54be;
-  text-align: center;
-  padding: 20px 0;
-  margin: 0 0 20px 0;
-  position: relative; /* Add this line */
-  z-index: 2; /* Add this line to make sure the h1 is correctly layered */
-  /*
-  border-bottom: 4px dotted #8d54be; 
-  padding-bottom: 20px; 
-  /*Add padding to separate the border from the h3 */
-  
+	font-size: 15pt;
+	color: #8d54be;
+	text-align: center;
+	padding: 18px 0;
+	margin: 0 0 10px 0;
 }
 
-.section p {
-    position: relative;
-    z-index: 1; /* This will ensure paragraphs are selectable */
-}
-
-/*dotted borders*/
 .section h1 span {
 	border: 4px dotted #8d54be;
 	padding: 10px;
@@ -342,7 +253,7 @@ audio { /* Grouped selector */
 
 /* --- Media Queries --- */
 /* Styles for Mobile */
-@media screen and (max-width: 1140px) { /* Adjusted breakpoint slightly */
+@media screen and (max-width: 999px) { /* Adjusted breakpoint slightly */
 	.section {
 		padding: 15px;
 		/* No horizontal margins */
@@ -361,13 +272,15 @@ audio { /* Grouped selector */
 }
 
 /* Styles for Tablets/Desktops */
-@media screen and (min-width: 1140px) { /* Simplified breakpoint */
+@media screen and (min-width: 1000px) { /* Simplified breakpoint */
 	.section {
 		padding: 20px;
 		margin-left: 150px;
 		margin-right: 150px;
 	}
-
+	#header {
+		/* Potentially adjust margin-top if navbar height changes */
+	}
 }
 
 
@@ -411,7 +324,7 @@ a {
 
 /* --- Optional: Responsive Styling --- */
 /* If the screen is too small, stack the columns */
-@media (max-width: 640px) { /* Adjust breakpoint as needed */
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
 	.two-column-container {
 		flex-direction: column; /* Stack items vertically */
 	}

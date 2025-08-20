@@ -1,162 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-	<title>Portfolio</title>
-	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-</head>
-
-
-<!-- (#Default) or Home Page begins
+  <!-- (#Default) or Home Page begins
 <a href="#videos">🎥 Videos</a>
 	<a href="#fun">🙃 Fun Stuff</a>
  -->
 
+<!-- Navbar -->
 <div class="navbar">
-	<a href="index.html">🏠 Home</a>
-	<a href="projects.html">⚒️ Projects</a>
+  <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-links">
+    <button class="nav-close" onclick="toggleMenu()">✖</button>
+    <a href="index.html">🏠 Home</a>
+    <a href="materials.html">🎒 Teaching Material</a>
+    <a href="projects.html">🖥️ Coding Projects</a>
+  </div>
 </div>
 
-<body>
 
-	<!-- header start -->
-	<div id="header" class="section">
-		<img alt="avatar" class="img-circle" src="penguin.png" onerror="this.style.display='none'">
-		<br>
-		<p>Gabrielle Pham</p>
-	</div>
-	<!-- header end -->
+  <body>
+    <!-- header start -->
+    <div id="header" class="section">
+      <img
+        alt="avatar"
+        class="img-circle"
+        src="profile.jpg"
+        onerror="this.style.display='none'"
+      />
+      <br />
+      <p>Gabrielle Pham</p>
+    </div>
+    <!-- header end -->
 
-	<!-- About Me section start i, strong  -->
-	<div class="section">
-		<h1><span>About Me</span></h1>
-		<p>
-			My favorite drink is milk. My favorite Pokémon is Piplup.
-			I can play the violin and I like listening to Bach. I am currently
-			playing Stardew Valley. I also like doodling in Colors Live on the
-			Nintendo Switch. Making stuff on Code.org was really fun in High School.
-			Coding in Scratch is really fun because of all the colors and
-			I think it is really cute. I went to school for Computer Science
-			at the University of Maryland: College Park. My class in college
-			was Linear Algebra. My favorite programming is actually Ruby because
-			it is easy to read and I like its syntax. I want to get better at
-			web development. I am currently learning more about how to use React. <br><br>
-			<code class="code-snippet">life = () => "Simplify";</code> <br><br>
-		</p>
-		<p class="quote">"Life is best when it's simple 🌺"</p>
-	</div>
+    <!-- About Me section start i, strong  -->
+    <div class="section">
+      <h1><span>About Me</span></h1>
 
-	<!-- About Me section end -->
+      <strong>👩🏻‍💻 A Journey Towards Front-End Development</strong>
+      <p>
+        I am a Computer Science graduate from the University of Maryland: College Park,
+        with an interest in web development. I am currently expanding my skills in 
+        front-end development using React. In addition to programming, I have hobbies 
+        such as playing the violin, exploring games like Stardew Valley, and playing 
+        around in Colors Live on my Switch, which inspire my design sense and attention
+        to detail. I enjoy building web applications because process is fun and you can
+        make cool things. I’m always learning and hope to create projects that are 
+        helpful and enjoyable for others.
 
-	<!-- Experience section start  -->
-	<div class="section">
-		<h1><span>Experience</span></h1>
-		<dl>
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>Level Designer</strong>
-								<strong>Mar 2022 - May 2023</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>bobaface</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Design levels for a match-3 mobile game.</dd>
+      </p>
 
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>CMSC411 Teaching Assistant</strong>
-								<strong>Aug 2021 - Dec 2021</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>Department of Computer Science</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Hold office hours, answer questions, and grade assignment.</dd>
+      <pre><code class="code-snippet">
+while (self.trying) {
+  self.reflect();
+  self.grow();
+}
 
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>Data Science Intern</strong>
-								<strong>Jun 2021 – Aug 2021</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>Coop. Inst. for Satellite Earth Sys. Studies</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Develop a 3D visualization tool for examining hydrological extremes.</dd>
+</code>
+</pre>
 
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>Game Dev Intern</strong>
-								<strong>Dec 2020 - Jun 2021</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>CHOYCES Educational Tutoring</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Develop games using Unity for young students to learn about math, reading, and science.</dd>
+      <p class="quote">
+        💖 Love is patient, love is kind." — 1 Corinthians 13:4
+      </p>
+    </div>
 
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>Engagement Intern</strong>
-								<strong>Aug 2020 - Dec 2020</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>Esports & Game Design Collective</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Help with community engagement, online events, workshops on Discord related to the gaming industry.</dd>
+    <!-- About Me section end -->
 
-				<dt>
-						<div style="display:flex; justify-content:space-between;">
-								<strong>Peer Mentor</strong>
-								<strong>Aug 2019 - May 2020</strong>
-						</div>
-						<div style="display:flex; justify-content:space-between;">
-								<i>FIRE Undergraduate Research</i>
-								<i>Remote</i>
-						</div>
-				</dt>
-				<dd>· Explore various CS topics like VR/AR/ML and how they apply to art and museum experiences.</dd>
-				<dd>· Help students with assignment assistance, grade projects, and give feedback on project proposals.</dd>
-		</dl>
+    <!-- Experience section start  -->
+    <div class="section">
+      <h1><span>Experience</span></h1>
+      <dl>
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Technology & Engineer Teacher</strong>
+            <strong>Feb 2024 - Jul 2025</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>Richard Montgomery High School</i>
+            <i>Rockville, Maryland</i>
+          </div>
+        </dt>
+        <dd>
+          · Taught AP Computer Science Principles, focusing on programming,
+          cybersecurity, and artificial intelligence.
+        </dd>
+        <dd>
+          · Taught Foundations of Technology by exploring the engineering design
+          process and hands-on projects.
+        </dd>
+        <dd>
+          · Taught Web Development, including web design with HTML/CSS and
+          programming with JavaScript.
+        </dd>
+        
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Level Designer</strong>
+            <strong>Mar 2022 - Sep 2024</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>bobaface</i>
+            <i>Remote</i>
+          </div>
+        </dt>
+        <dd>· Devised missions, challenges, or puzzles to be encountered in game play in Unity and C#. </dd>
+        <dd>· Balanced and adjust gameplay experiences to ensure the critical and commercial success of the game. </dd>
+        <dd>· Collaborated with artists to achieve appropriate visual style using Git version control and Figma. </dd>
 
-	</div>
-	<!-- Experience section end -->
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>CMSC411 Teaching Assistant</strong>
+            <strong>Aug 2021 - Dec 2021</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>UMD Department of Computer Science</i>
+            <i>College Park</i>
+          </div>
+        </dt>
+        <dd>· Held regular office hours to provide one-on-one and assist with coursework.</dd>
+        <dd>· Responded promptly to student questions via email, in-person, Piazza to facilitate understanding and academic success.</dd>
+        <dd>· Assisted with grading assignments and exams by providing constructive feedback using Gradescope.</dd>
 
-	<!-- Education section start  -->
-	<div class="section">
-		<h1><span>Education</span></h1>
-		<dl>
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Data Science Intern</strong>
+            <strong>Jun 2021 – Aug 2021</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>Coop. Inst. for Satellite Earth Sys. Studies</i>
+            <i>Remote</i>
+          </div>
+        </dt>
+        <dd>· Developed a 3D visualization tool for examining hydrological extremes using Python and Jupyter Notebook.
+        </dd>
+        <dd>· Cleaned and manipulated raw data using statistical software using cartopy and netCDF.
+        </dd>
+        <dd>· Created visualizations to convey the results of data analysis using numpy, pandas, matplot, and plotly.
+        </dd>
 
-			<dt>
-				<div style="display:flex; justify-content:space-between;">
-						<strong>Bachelor of Science in Computer Science</strong>
-						<strong>September 2018 - May 2022</strong>
-				</div>
-				<div style="display:flex; justify-content:space-between;">
-						<i>University of Maryland – College Park</i>
-						<i>College Park, Maryland</i>
-				</div>
-			</dt>
-			<dd>· Coursework: Linear Algebra, Computer Architecture, Android Development, Algorithm Design, Computer Vision, Computer Graphics, Advanced Data Structures, React Development</dd>
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Game Dev Intern</strong>
+            <strong>Dec 2020 - Jun 2021</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>CHOYCES Educational Tutoring</i>
+            <i>Remote</i>
+          </div>
+        </dt>
+        <dd>
+          · Developed games using Unity for young students to learn about math,
+          reading, and science.
+        </dd>
 
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Engagement Intern</strong>
+            <strong>Aug 2020 - Dec 2020</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>Esports & Game Design Collective</i>
+            <i>Remote</i>
+          </div>
+        </dt>
+        <dd>
+          · Helped with community engagement, online events, workshops on Discord
+          related to the gaming industry.
+        </dd>
 
-		</dl>
-	</div>
-	<!-- Experience section end -->
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Peer Mentor</strong>
+            <strong>Aug 2019 - May 2020</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>FIRE Undergraduate Research</i>
+            <i>Remote</i>
+          </div>
+        </dt>
+        <dd>
+          · Explored various CS topics like VR/AR/ML and how they apply to art
+          and museum experiences.
+        </dd>
+        <dd>
+          · Helped students with assignment assistance, grade projects, and give
+          feedback on project proposals.
+        </dd>
+      </dl>
+    </div>
+    <!-- Experience section end -->
 
-<!--Two Columns Section-->
+    <!-- Education section start  -->
+    <div class="section">
+      <h1><span>Education</span></h1>
+      <dl>
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Bachelor of Science in Computer Science</strong>
+            <strong>Sep 2018 - May 2022</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>University of Maryland – College Park</i>
+            <i>College Park, Maryland</i>
+          </div>
+        </dt>
+        <dd>· Coursework: Linear Algebra, Computer Architecture, Android
+          Development, Algorithm Design, Computer Vision, Computer Graphics,
+          Advanced Data Structures, React Development
+        </dd>
+      </dl>
+      
+    </div>
+    <!-- Education section end -->
+
+    <!-- Volunteer section start  -->
+    <div class="section">
+      <h1><span>Volunteering</span></h1>
+      <dl>
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>3rd Grade Sunday School Teacher</strong>
+            <strong>Jan 2022 - Present</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>Our Lady of Vietnam Parish</i>
+            <i>Silver Spring, Maryland</i>
+          </div>
+        </dt>
+        <dd>· Lead weekly religious instruction for 3rd-grade Vietnamese students using the Faith and Life series curriculum to deepen their understanding of Catholic teachings and traditions. </dd>
+        <dd>· Prepare students for the Faith Knowledge Assessment by reinforcing key concepts, prayers, and scripture through engaging lessons. </dd>
+        
+        <dt>
+          <div style="display: flex; justify-content: space-between">
+            <strong>Church Violinist</strong>
+            <strong>Jul 2015 – Present</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <i>Our Lady of Vietnam Parish</i>
+            <i>Silver Spring, Maryland</i>
+          </div>
+        </dt>
+        <dd>
+          · Provided musical accompaniment with the choir and other instrumentalists for Vietnamese Catholic hymns.
+        </dd>
+        <dd>
+          · Provided music support and tutoring instruction to children by helping them learn violin and church performances.
+        </dd>
+      </dl>
+    </div>
+    <!-- Volunteer section end -->
+
+    <!--Two Columns Section-->
 	<div class="section"> <h1><span>Technologies</span></h1> <div class="two-column-container">
 
 		<div class="column" id="languages-column">
-			<h2>Programming Languages</h2>
+			<h2>Coding Languages</h2>
 			<ul>
 				<li>☕ Java</li>
 				<li>⚪ C</li>
@@ -186,58 +292,60 @@
 		</div>
 
 	</div> </div>
+    <!--Two Columns Section End-->
 
-	<!--Two Columns Section End-->
-
-
-	<!--
+    <!--
 	<div class="section">
 		<h1><span>Programming Languages</span></h1>
 		<dl>
 			<dd>Java ☕<br />
 				<!--<progress min="0" max="100" value="50"></progress>-->
 
-	<!-- Media section start height="180" width="360" -->
-	<div class="section">
-		<h1><span>Try Sololearn!</span></h1>
-		<iframe src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
-	</div>
-	<!-- Media section end -->
+    <!-- Media section start height="180" width="360" -->
+    <div class="section">
+      <h1><span>Try Sololearn!</span></h1>
+      <iframe
+        src="https://www.youtube.com/embed/Q6_5InVJZ88"
+        allowfullscreen
+        frameborder="0"
+      ></iframe>
+    </div>
+    <!-- Media section end -->
 
-	<!-- Contacts section start -->
-	<div class="section" id="contacts">
-		<h1><span>Other Sites and Contacts</span></h1>
-		<br />
-		<div>
-			<!--
+    <!-- Contacts section start -->
+    <div class="section" id="contacts">
+      <h1><span>Other Sites and Contacts</span></h1>
+      <div>
+        <!--
 						<a href="https://www.linkedin.com/in/purepuremilk/" target="_blank">
 								<img alt="🌐" src="Linkedin.png" onerror="this.style.display='none'" />
 						</a>
 						-->
-			<a href="https://github.com/PurePureMilk">
-				<img alt="🐱" src="github.png" onerror="this.src='https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
-" />
-			</a>
-			<a href="https://www.sololearn.com/Profile/544495/?ref=app">
-				<img alt="👩🏻‍💻" src="https://blob.sololearn.com/avatars/sololearn.png" />
-			</a>
+        <a href="https://github.com/PurePureMilk">
+          <img
+            alt="🐱"
+            src="github.png"
+            onerror="this.src='https://www.iconsdb.com/icons/preview/purple/github-9-xxl.png'
+"
+          />
+        </a>
+        <a href="https://www.sololearn.com/Profile/544495/?ref=app">
+          <img
+            alt="👩🏻‍💻"
+            src="https://blob.sololearn.com/avatars/sololearn.png"
+          />
+        </a>
+      </div>
+      <p>
+        
+        projectpurepure@gmail.com
+      </p>
+    </div>
+    <!-- Contacts section end -->
 
-		</div>
-		<p>
-			<br />
-			projectpurepure@gmail.com
-		</p>
-	</div>
-	<!-- Contacts section end -->
-
-	<div class="copyright">
-		Made with 💜 and Sololearn
-	</div>
-
-</body>
-<!-- Home Page end -->
-
-
-
-
+    <div class="copyright">Made with 💜 with Sololearn</div>
+    
+    <script src="main.js"></script>
+  </body>
+  <!-- Home Page end -->
 </html>
