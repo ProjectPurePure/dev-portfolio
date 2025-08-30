@@ -1,0 +1,17 @@
+
+ 
+
+
+<p>
+<strong>🎵 Simple Music Learning App <span style="float:right;">Mar 2017 - May 2017</span></strong>
+</p>
+
+
+<p>
+One of my first time coding using Code org. Learning how to read notes on a staff.
+</p>
+<br>
+
+
+<br><br>
+<!-- Personal Project section ends -->
