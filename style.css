@@ -256,9 +256,10 @@ p {
 .project-box {
   border: 3px solid #f8c75d;
   border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #fff;
+  padding: 10px;
+  margin: 20px auto; /* 20px for top and bottom, 'auto' for left and right */
+  margin-left: 77px;  /* Adds a margin of 10 pixels on the left */
+  margin-right: 77px; /* Adds a margin of 10 pixels on the right */
 }
 
 /* Experience / Education List Styles */
@@ -283,11 +284,13 @@ dt span {
 	font-weight: normal; /* Adjust if needed */
 }
 
-/* Add this to your CSS file or a <style> block */
-dt div {
-  position: relative;
-  z-index: 2;
+.section {
+		padding: 20px;
+		margin-left: 150px;
+		margin-right: 150px;
 }
+
+
 
 /* Programming/Dev/Creative Tools List Styles */
 /* (Uses general dl/dd styles above) */
@@ -372,15 +375,20 @@ audio { /* Grouped selector */
 		font-size: 0.9em;
 		margin-top: 3px;
 		}
+
+		.project-box {
+  border: 3px solid #f8c75d;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto; /* 20px for top and bottom, 'auto' for left and right */
+
+}
+
 }
 
 /* Styles for Tablets/Desktops */
 @media screen and (min-width: 1140px) { /* Simplified breakpoint */
-	.section {
-		padding: 20px;
-		margin-left: 150px;
-		margin-right: 150px;
-	}
+
 
 }
 
