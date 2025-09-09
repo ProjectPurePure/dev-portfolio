@@ -253,6 +253,14 @@ p {
 	text-align: left;
 }
 
+.project-box {
+  border: 3px solid #f8c75d;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
 /* Experience / Education List Styles */
 dl {
 	/* Add padding/margin if needed */
@@ -273,6 +281,12 @@ dd {
 dt span {
 	float: right;
 	font-weight: normal; /* Adjust if needed */
+}
+
+/* Add this to your CSS file or a <style> block */
+dt div {
+  position: relative;
+  z-index: 2;
 }
 
 /* Programming/Dev/Creative Tools List Styles */
