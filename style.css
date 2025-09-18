@@ -95,6 +95,7 @@ p {
 
 /* Mobile menu */
 @media (max-width: 640px) {
+  
   .nav-toggle {
     display: block;         /* show hamburger */
   }
@@ -136,6 +137,7 @@ p {
   .navbar {
     height: 55px; /* increase this to make the blue bar thicker */
   }
+  
 }
 /* Default for desktops */
 #header {
@@ -168,13 +170,7 @@ p {
 	border-radius: inherit; /* Inherit border-radius if header has one */
 }
 
-#header img.img-circle { /* Specificity for the header image */
-	display: block;
-	width: 80px; /* Original size for header image */
-	height: 80px; /* Original size for header image */
-	margin: auto; /* Center the image */
-	border: 3px solid #8d54be; /* Original border for header image */
-}
+
 
 #header p {
   font-size: 25pt;
@@ -358,7 +354,6 @@ audio { /* Grouped selector */
 }
 
 /* --- Media Queries --- */
-/* Styles for Mobile */
 @media screen and (max-width: 1140px) { /* Adjusted breakpoint slightly */
 	.section {
 		padding: 15px;
@@ -383,7 +378,13 @@ audio { /* Grouped selector */
   margin: 20px auto; /* 20px for top and bottom, 'auto' for left and right */
 
 }
-
+#header img.img-circle { /* Specificity for the header image */
+	display: block;
+	width: 150px; /* Original size for header image */
+	height: 150px; /* Original size for header image */
+	margin: auto; /* Center the image */
+	border: 3px solid #8d54be; /* Original border for header image */
+}
 }
 
 /* Styles for Tablets/Desktops */
@@ -440,6 +441,14 @@ a {
 	.column {
 			min-width: 100%; /* Allow columns to take full width when stacked */
 	}
+	
+	#header img.img-circle { /* Specificity for the header image */
+	display: block;
+	width: 80px; /* Original size for header image */
+	height: 80px; /* Original size for header image */
+	margin: auto; /* Center the image */
+	border: 3px solid #8d54be; /* Original border for header image */
+}
 }
 
 
