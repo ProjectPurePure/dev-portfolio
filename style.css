@@ -142,7 +142,7 @@ p {
 /* Default for desktops */
 #header {
 	padding: 40px 20px;
-	background-image: url("New_space_banner.jpg");
+	background-image: url("banner2.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -154,8 +154,8 @@ p {
 /* Phones */
 @media (max-width: 640px) {
 	#header {
-		height: 150px;
-		padding: 20px 10px;
+		height: 250px;
+		padding: 50px 10px;
 	}
 }
 
@@ -380,8 +380,8 @@ audio { /* Grouped selector */
 }
 #header img.img-circle { /* Specificity for the header image */
 	display: block;
-	width: 150px; /* Original size for header image */
-	height: 150px; /* Original size for header image */
+	width: 210px; /* Original size for header image */
+	height: 210px; /* Original size for header image */
 	margin: auto; /* Center the image */
 	border: 3px solid #8d54be; /* Original border for header image */
 }
@@ -444,8 +444,8 @@ a {
 	
 	#header img.img-circle { /* Specificity for the header image */
 	display: block;
-	width: 80px; /* Original size for header image */
-	height: 80px; /* Original size for header image */
+	width: 160px; /* Original size for header image */
+	height: 160px; /* Original size for header image */
 	margin: auto; /* Center the image */
 	border: 3px solid #8d54be; /* Original border for header image */
 }
